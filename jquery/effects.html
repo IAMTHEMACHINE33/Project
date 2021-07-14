@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Effects</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <style>
+        .main-div{
+            height: 300px;
+            width: 300px;
+            background-color: orange;
+            margin: 10px;
+            /* display: none; */
+        }
+
+        button{
+            padding: 5px;
+            border: none;
+            background:black;
+            border-radius: 5px;
+            cursor: pointer;
+            color: #fff;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <h1>Main div content</h1>
+    </div>
+    <button id="hide">hide</button>
+    <button id="show" >show</button>
+    <button id="hide_show">Hide/Show</button>\
+    <button id="fadein">Fadein</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="fadetoggle">Fade Toggle</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#hide").click(function(){
+                $(".main-div").hide(1000)
+            })
+            $("#show").click(function(){
+                $(".main-div").show(1000)
+            })
+            $("#hide_show").click(function(){
+                $(".main-div").toggle(1000)
+            })
+            $("#fadein").click(function(){
+                $(".main-div").fadeIn(2000)
+            })
+            $("#fadeout").click(function(){
+                $(".main-div").fadeOut(2000)
+            })
+            $("#fadetoggle").click(function(){
+                $(".main-div").fadeToggle(2000)
+            })
+        })
+    </script>
+</body>
+</html>

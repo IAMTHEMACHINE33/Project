@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,
+        th,
+        td{
+            border: 1px solid red;
+            
+        }
+        table{
+            width: 100%;
+            border-spacing: 10px;
+            empty-cells: hide;
+            border-collapse: collapse;
+        }
+        th,
+        td{
+            padding: 10px;
+            text-align: left;
+            height: 70px;
+            vertical-align: bottom;
+        }
+        caption{
+            caption-side: top;
+        }
+        tr:hover{
+            background-color: black;
+            color: white;
+
+        }
+        tr:nth-child(odd){
+            background-color: rgb(224, 199, 199);
+            color: white;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Details</h1>
+    <div></div>
+    <table>
+      <caption>
+        Student's Details
+      </caption>
+      <thead>
+        <tr>
+          <th>Roll_no</th>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>HOD</th>
+          <th>TEL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>401</td>
+          <td>Akon</td>
+          <td>CSE</td>
+          <td>MR. X</td>
+          <td>5337</td>
+        </tr>
+        <tr>
+          <td>402</td>
+          <td>JOhn</td>
+          <td>CSE</td>
+          <td>Mr.Y</td>
+          <td>53326</td>
+        </tr>
+        <tr>
+            <td>403</td>
+            <td>Akon</td>
+            <td>CSE</td>
+            <td>MR. X</td>
+            <td>5337</td>
+          </tr>
+          <tr>
+            <td>404</td>
+            <td>JOhn</td>
+            <td>CSE</td>
+            <td>Mr.Y</td>
+            <td>53326</td>
+          </tr>
+      </tbody>
+    </table>
+</body>
+</html>

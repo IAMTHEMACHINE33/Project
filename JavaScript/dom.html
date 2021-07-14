@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <p>This is first para</p>
+    <p>This is second para</p>
+    <h1 id="head1">Heading 1 from HTML</h1>
+    <span class="span1">Span 1 text</span>
+    <h2 class="span1">Heading 2 text</h2>
+    <p>New para</p> -->
+    <img src="/img/AmiOIFeKCUNMVVyMVQ35n5XTxip8a_Y6CnV8xG_AxKg.jpg" width="400" id="image1"/><br/>
+    <button type="button" onclick="changeImage()">Change Image</button>
+
+    <p id="para2">This is normal text</p>
+    <button type="button" onclick="changeStyle()">Change Style</button>
+
+    <script>
+        function changeImage(){
+            var y = document.getElementById("image1");
+            y.src = "../img/45459-full_pink-floyd-wallpapers-hd-74-background-pictures.jpg";
+            y.width = "1000";
+            y.style.border = "5px solid red";    
+        }
+
+        function changeStyle(){
+            var z = document.getElementById("para2");
+            z.style.fontsize = "50px";
+            z.style.color = "red";
+            z.style.backgroundColor = "yellow";
+
+        }
+    </script>
+
+
+    <script>
+        // var x = document.getElementsByTagName("p");
+        // var y = document.getElementById("head1");
+        // var z = document.getElementsByClassName("span1");
+        // var a = document.querySelector("p");
+        // console.log(a);
+        // var b = document.querySelectorAll("p");
+        // console.log(b)
+        // var x = document.getElementsByTagName("p");
+        // x[2].innerHTML="Text from javascript";
+
+        // var y = document.getElementById("head1");
+        // y.innerHTML = "Heading 1 from JavaScript";
+
+    </script>
+
+</body>
+</html>

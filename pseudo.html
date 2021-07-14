@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        a:link{
+            color:black;
+            text-decoration:none;
+        }
+        a:visited{
+            color:blue;
+        }
+        a:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        a:active{
+            color:burlywood;
+        }
+        tr:hover{
+            background-color: grey;
+        }
+        tr:nth-child(even){
+            background-color: cadetblue;
+        }
+        input:focus{
+            background-color: cornflowerblue;
+        }
+        p::first-letter{
+            font-size: 40px;
+            color:darkgray
+        }
+        p::first-line{
+            font-size: 33px;
+        }
+        .pseudo::after{
+            content:"this is after"
+        }
+        ::selection{
+            background-color: darkkhaki;
+        }
+        a[target="_blank"]{
+            background-color:grey;
+            color: wheat;
+            margin-top: 50px;
+            padding:10px;
+        }
+        input[type="text"]{
+            border: 2px solid royalblue;
+        }
+        input[type="button"]{
+            background-color: sienna;
+            border: none;
+            border-radius: 10px;
+            font-size:20px;
+            padding:15px;
+            color:white;
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class and Pseudo Elements</title>
+</head>
+<body>
+    <h1 class="Pseudo">Pseudo</h1>
+    <a href="#" target="_blank">Blank Link</a>
+    <a href="#" target="_self" >Self Link</a>
+    <a href="https://google.com">Google</a>
+
+    <Table border="1">
+        <tr>
+            <th>EmpID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>E342</td>
+            <td>Bill</td>
+            <td>Evans</td>
+            <td>Bill@devcurry.com</td>
+            <td>35</td>
+        </tr>
+        <tr>
+            <td>E343</td>
+            <td>Laura</td>
+            <td>Matt</td>
+            <td>laura@devcurry.com</td>
+            <td>26</td>
+        </tr>
+
+        <tr>
+            <td>E344</td>
+            <td>Ram</td>
+            <td>Kumar</td>
+            <td>ram@devcurry.com</td>
+            <td>56</td>
+        </tr>
+        <tr>
+            <td>E345</td>
+            <td>Yuri</td>
+            <td>Gagrin</td>
+            <td>yuri@devcurry.com</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>E346</td>
+            <td>Asha</td>
+            <td>Singh</td>
+            <td>asha@devcurry.com</td>
+            <td>42</td>
+        </tr>
+    
+    </Table>
+    <h1>Form</h1>
+    <form>
+        <input type="text"/>
+        <input  type="button" value="Login"/>
+    </form>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque fuga inventore, excepturi quidem, pariatur fugiat eaque officiis eum vitae asperiores vel voluptatem consequatur, dolorum eligendi architecto ipsum debitis alias recusandae.
+        Quisquam, placeat. Veniam, ipsum ab minus, incidunt quia saepe recusandae necessitatibus amet assumenda fuga officiis ad! Optio distinctio enim asperiores quidem, magni, earum recusandae perferendis, cumque inventore culpa esse fugit?
+    </p>
+</body>
+
+</html>

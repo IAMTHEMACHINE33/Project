@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* desendent selector */
+        .main-div h1{
+            background-color: cornflowerblue;
+        }
+        /* Child selector */
+        .main-div>h1{
+            background-color:darkcyan;
+        }
+        /* adjacent selector */
+        h1+h2{
+            background-color: darkblue;
+        }
+        /* Sibling selector */
+        h1 ~ h2{
+            background-color: crimson;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+</head>
+<body>
+    <div class="main-div">
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <div>
+            <h1>This is another heading 1</h1>
+        </div>
+        <h2>This is another heading 2</h2>
+    </div>
+    <div class="second">
+        <h1>This second division</h1>
+    </div>
+</body>
+</html>

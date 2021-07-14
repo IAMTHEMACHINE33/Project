@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>
+        Form
+    </h1>
+    <Form enctype="multipart/form-data" method="POST" action="" autocomplete="off">
+        <label for="FirstName">FirstName</label>
+        <input Type="Text" name="FirstName" Id="FirstName"/> <br />
+        <label for="LastName">LastName </label>
+        <input Type="Text" name="LastName" Id="LastName"/> <br/>
+        <input Type="Submit" name="Submit" value="Submit"/> <br/>
+        <button type="Submit" name="Submit" value="Submit">Submit</button>
+        
+        
+        <label for="items"></label>
+        <select id ="items" name="items" multiple>
+            <option value="item1">Item 1</option>
+            <option value="item2" selected>Item 2</option>
+            
+        </select>
+        <br/><br/>
+        <textarea id="description" name="description" rows="10" cols="50" placeholder="Enter description" required></textarea>
+        <br/><br/>
+        <input type="radio" id="male" name="gender"/>
+        <label for="male">male</label>
+        <input type="radio" id="female" name="gender"/>
+        <label for="female">female</label>
+        <input type="radio" id="others" name="gender"/>
+        <label for="others">others</label><br/><br/>
+
+        <input type="file" id="file" name="file"/>
+
+        <input type="checkbox" id="item1" name="item1" value="item1"/>
+        <label for="item1"> Item 1</label>
+        <input type="checkbox" id="item2" name="item2" value="item2"/>
+        <label for="item2">Item 2</label>        
+        <input type=button" id="submit_btm" name="submit_btm" value="Sign in"/>
+        
+        <label for="password" id="password" name="password">password</label>
+        <input type="password" id="password" name="password"/><br/><br/>
+       
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob"/>
+        <input type="reset" name="reset" value="reset"/>
+    </Form>
+</body>
+</html>

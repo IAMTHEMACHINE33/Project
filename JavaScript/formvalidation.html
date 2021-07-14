@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm(){
+            let fname=document.getElementById("firstname");
+            let lname=document.getElementById("lastname");
+            let phone=document.getElementById("phone");
+            let email=document.getElementById("email");
+            let password=document.getElementById("password");
+
+            let letters = /^[A-Za-z]+$/;
+
+            let numbers = /^[0-9]+$/;
+
+            let alphanumeric = /^[0-9a-zA-Z]+$/;
+
+            let email_pattern = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,5})$/;
+
+            let phone_pattern = /^\b\d{3}[-.]?\d{3}[-.]?\d{4}\b$/;
+
+            let password_pattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+            
+            if (!fname.value.match(letters)){
+                alert("First name must only contain alphabets");
+                return false;
+                fname.focus();
+            }
+            if (!lname.value.match(letters)){
+                alert("Last name must only contain alphabets");
+                return false;
+                lname.focus();
+            }
+            if (!password.value.match(password_pattern)){
+                alert("password is invalid");
+                return false;
+                password.focus();
+            }
+            return true;
+            // if(fname.value==""){
+            //     alert("First name cannot be empty");
+            //     fname.focus();
+            //     return false;
+            // }
+            // if (lname.value==""){
+            //     alert("Last name cannot be empty");
+            //     lname.focus();
+            //     return false;
+            
+            // }
+            // if(password.value.length < 8 || password.value.length > 20){
+            //     alert("Password must be atleast 8 characters and less than 20 characters")
+            //     password.focus();
+            //     return false;
+
+            // }
+            // if(isNaN(phone.value)){
+            //     alert("Phone no. must be a number");
+            //     phone.focus();
+            //     return false;
+            // }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="" onsubmit="return validateForm()">
+        <input type="text" name="firstname" id="firstname" placeholder="Enter first name"><br/><br/>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter last name"><br/><br/>
+        <input type="number" name="phone" id=phone" placeholder="Enter phone number"><br/><br/>
+        <input type="email" name="email" id="email" placeholder="Enter email"><br/><br/>
+        <input type="password" name="password" id="password" placeholder="Enter password"><br/><br/>
+        <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>

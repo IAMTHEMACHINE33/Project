@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+        }
+
+        .box{
+            width: 300px;
+            margin: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 2px rgba(83, 81, 81,0.5) ;
+            overflow: hidden;
+            background-color: rgb(90, 124, 226);
+        }
+        img{
+            width: 100%;
+            transition: 0.3s ;
+        }
+        .content{
+            padding: 20px;
+            line-height: 25px;
+        }
+        h2{
+            color:rgb(145, 172, 172) ;
+        }
+        .third-div{
+            display: flex;
+            justify-content: flex-end;
+        }
+        button{
+            margin: 20px;
+            padding: 3px;
+            background-color: rgb(145, 172, 172);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: 500px;
+            cursor: pointer;
+        }
+        .image{
+            
+            cursor: pointer;
+            overflow: hidden;
+              
+
+        }
+       .image:hover img{
+            /* transform: rotate(360deg);       */
+            transform: scale(1.5);
+               
+        }
+        .main-div{
+            display: flex;
+            justify-content: center;
+            background-color:rgba(128, 178, 201, 0.589);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Campus</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="box">
+            <div class="image">
+                <img src="img/AmiOIFeKCUNMVVyMVQ35n5XTxip8a_Y6CnV8xG_AxKg.jpg"/>
+            </div>
+            <div class="content">
+                <h2>Bsc(Hons) Computing</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, unde possimus soluta ut accusamus blanditiis! Ipsam saepe molestias quas enim soluta! Ipsum provident, omnis laborum modi inventore quis soluta quas.</p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt;</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="img/AmiOIFeKCUNMVVyMVQ35n5XTxip8a_Y6CnV8xG_AxKg.jpg"/>
+            </div>
+            <div class="content">
+                <h2>Bsc(Hons) Ethical Hacking</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, unde possimus soluta ut accusamus blanditiis! Ipsam saepe molestias quas enim soluta! Ipsum provident, omnis laborum modi inventore quis soluta quas.</p>
+            </div>
+            <div class="third-div">
+                <button type="button">Explore &gt;</button>
+            </div>
+        </div>
+</div>
+</body>
+</html>
